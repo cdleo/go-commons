@@ -6,7 +6,7 @@ import (
 )
 
 type Logger interface {
-	SetLogLevel(level LogLevel) error
+	SetLogLevel(level string) error
 	SetOutput(w io.Writer)
 	SetTimestampFunc(f func() time.Time)
 
