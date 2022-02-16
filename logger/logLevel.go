@@ -99,6 +99,8 @@ func (l LogLevel) String() string {
 		return "query"
 	case LogLevel_Trace:
 		return "trace"
+	default:
+		return ""
 	}
 }
 
