@@ -1,3 +1,7 @@
+/*
+Package logger its the package of the Logger Facade
+*/
+
 package logger
 
 import (
@@ -9,37 +13,37 @@ import (
 type LogLevel int8
 
 const (
-	// Disabled disables the logger.
+	// No log
 	LogLevel_Disabled LogLevel = iota
 
-	// Mensajes de muy baja frecuencia que se deben mostrar siempre (como el copyright)
+	// Very low frequency messages that should always be displayed (such as copyright)
 	LogLevel_Show
 
-	// Errores que provocan el detenimiento de la aplicación
+	// Errors that cause the application to stop
 	LogLevel_Fatal
 
-	// Errores que no detienen la app
+	// Errors that don't stop the app
 	LogLevel_Error
 
-	// Condiciones a tener en cuenta pero que no generan error
+	// Alert conditions that not generate an error
 	LogLevel_Warning
 
-	// Detalles importantes, como la versión de los componentes al levantar
+	// Important details, such as the version of the components when lifting
 	LogLevel_Info
 
-	// Detalles importantes de negocio, como la identificación de la transacción y el user que la realizó
+	// Important business details, such as the identification of the transaction and the user who carried it out
 	LogLevel_Business
 
-	// Detalle de todos los request y response de Negocio que se intercambien con el exterior (no incluye mensajes internos de la app, como comandos)
+	// Details of all the Business request and response exchanged with the outside
 	LogLevel_Message
 
-	// Información detallada de la ejecución
+	//  Detailed execution's information
 	LogLevel_Debug
 
-	// Detalle de querys ejecutadas con sus parámetros de entrada
+	// Detail of executed querys with their input parameters
 	LogLevel_Query
 
-	// Máximo nivel de detalle, como los valores devueltos por las querys, trace de http, etc.
+	// Maximum level of detail, such as the values returned by the querys, http trace, etc.
 	LogLevel_Trace
 )
 
