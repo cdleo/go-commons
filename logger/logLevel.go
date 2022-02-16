@@ -10,7 +10,7 @@ type LogLevel int8
 
 const (
 	// Disabled disables the logger.
-	LogLevel_Disabled ogLevel = iota
+	LogLevel_Disabled LogLevel = iota
 
 	// Mensajes de muy baja frecuencia que se deben mostrar siempre (como el copyright)
 	LogLevel_Show
