@@ -1,6 +1,6 @@
-# GO-FACADES
+# GO-COMMONS
 
-The repository go-facades it's a set of useful interfaces of widely used subsystems (like logging).
+The repository go-commons it's a set of useful interfaces of widely used subsystems (like logging) and some widely used functions (like formatting).
 
 It's based on the principles of Clean Architecture, due to the underlying business rules (use cases), have dependencies of this interfaces instead of the concrete implementation.
 
