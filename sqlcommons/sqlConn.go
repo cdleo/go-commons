@@ -1,4 +1,4 @@
-package ISQL
+package sqlcommons
 
 import (
 	"database/sql"
