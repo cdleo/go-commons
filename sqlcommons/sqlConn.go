@@ -6,7 +6,7 @@ type SqlConn interface {
 	Open() error
 	Close()
 	IsOpen() error
-	sql.DB
+	*sql.DB
 }
 
 type EngineAdapter interface {
