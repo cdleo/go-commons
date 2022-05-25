@@ -1,8 +1,6 @@
 package sqlcommons
 
-import (
-	"database/sql"
-)
+import "database/sql"
 
 type SqlConn interface {
 	Open() error
