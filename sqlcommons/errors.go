@@ -4,15 +4,6 @@ import (
 	"fmt"
 )
 
-//Drivers
-const (
-	Oracle_DriverName     = "oracle"
-	OracleTNS_DriverName  = "oracle-tns"
-	Postgresql_DriverName = "postgres"
-	SQLite3_DriverName    = "sqlite3"
-	MockDB_DriverName     = "mockdb"
-)
-
 //Errors
 var (
 	DBNotSupported   = fmt.Errorf("DataBase not supported")
