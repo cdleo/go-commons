@@ -10,7 +10,6 @@ var (
 	DBNotInitialized = fmt.Errorf("DataBase not initialized")
 	ConnectionFailed = fmt.Errorf("Connection Failed")
 	ConnectionClosed = fmt.Errorf("Connection Closed")
-	NextValueFailed  = fmt.Errorf("Unable to get next sequence value")
 	OpNotSupported   = fmt.Errorf("Operation not supported")
 	TxNotFoundInCtx  = fmt.Errorf("SQLTx not found in context")
 
