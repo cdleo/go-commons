@@ -10,6 +10,7 @@ var (
 	DBNotInitialized = errors.New("DataBase not initialized")
 	ConnectionFailed = errors.New("Connection Failed")
 	ConnectionClosed = errors.New("Connection Closed")
+	NextValueFailed  = errors.New("Unable to get next sequence value")
 	OpNotSupported   = errors.New("Operation not supported")
 	TxNotFoundInCtx  = errors.New("SQLTx not found in context")
 
