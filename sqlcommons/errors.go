@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-//Errors
+// Errors
 var (
 	DBNotSupported   = fmt.Errorf("DataBase not supported")
 	DBNotInitialized = fmt.Errorf("DataBase not initialized")
